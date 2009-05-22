@@ -30,6 +30,22 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link SayHi }
+     * 
+     */
+    public SayHi createSayHi() {
+        return new SayHi();
+    }
+
+    /**
+     * Create an instance of {@link GreetMeResponse }
+     * 
+     */
+    public GreetMeResponse createGreetMeResponse() {
+        return new GreetMeResponse();
+    }
+
+    /**
      * Create an instance of {@link SayHiResponse }
      * 
      */
@@ -51,22 +67,6 @@ public class ObjectFactory {
      */
     public GreetMeOneWay createGreetMeOneWay() {
         return new GreetMeOneWay();
-    }
-
-    /**
-     * Create an instance of {@link SayHi }
-     * 
-     */
-    public SayHi createSayHi() {
-        return new SayHi();
-    }
-
-    /**
-     * Create an instance of {@link GreetMeResponse }
-     * 
-     */
-    public GreetMeResponse createGreetMeResponse() {
-        return new GreetMeResponse();
     }
 
 }
