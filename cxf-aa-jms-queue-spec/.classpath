@@ -84,8 +84,6 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/cxf-rt-ws-policy"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cxf-rt-ws-rm"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cxf-rt-ws-security"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/cxf-systests"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/cxf-testutils"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cxf-tools-common"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cxf-tools-corba"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cxf-tools-java2ws"/>
@@ -99,9 +97,7 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/cxf-wsdl-validator-plugin"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cxf-xerces-xsd-validation"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cxf-xjc-dv"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/cxf-xjc-dv-test"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cxf-xjc-ts"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/cxf-xjc-ts-test"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/cxf-rt-transports-jms-spec"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/cxf-rt-transports-jms"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
