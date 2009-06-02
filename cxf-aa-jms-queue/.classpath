@@ -79,7 +79,6 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/cxf-rt-transports-http"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cxf-rt-transports-http-jetty"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cxf-rt-transports-jbi"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/cxf-rt-transports-jms"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cxf-rt-transports-local"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cxf-rt-ws-addr"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cxf-rt-ws-policy"/>
@@ -103,5 +102,6 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/cxf-xjc-dv-test"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cxf-xjc-ts"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cxf-xjc-ts-test"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/cxf-rt-transports-jms-spec"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

@@ -98,6 +98,6 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/cxf-xerces-xsd-validation"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cxf-xjc-dv"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cxf-xjc-ts"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/cxf-rt-transports-jms"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/cxf-rt-transports-jms-spec"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
