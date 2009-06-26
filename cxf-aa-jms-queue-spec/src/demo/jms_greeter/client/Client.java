@@ -75,10 +75,10 @@ public final class Client {
 
         BindingProvider  bp = null;
 
-        if (handler instanceof BindingProvider) {
+/*        if (handler instanceof BindingProvider) {
             bp = (BindingProvider)handler;
             Map<String, Object> requestContext = bp.getRequestContext();
-            JMSMessageHeadersType requestHeader = new JMSMessageHeadersType();
+            JMSMessageType requestHeader = new JMSMessageType();
             requestHeader.setJMSCorrelationID("JMS_QUEUE_SAMPLE_CORRELATION_ID");
             requestHeader.setJMSExpiration(3600000L);
             JMSPropertyType propType = new JMSPropertyType();
@@ -95,7 +95,7 @@ public final class Client {
 
         if (bp != null) {
             Map<String, Object> responseContext = bp.getResponseContext();
-            JMSMessageHeadersType responseHdr = (JMSMessageHeadersType)responseContext.get(
+            JMSMessageType responseHdr = (JMSMessageType)responseContext.get(
                                        "org.apache.cxf.jms.client.response.headers");
             if (responseHdr == null) {
                 System.out.println("response Header should not be null");
@@ -115,7 +115,7 @@ public final class Client {
             System.out.println("Failed to get the binding provider cannot access context info.");
             System.exit(3);
         }
-
+*/
 
         System.out.println();
 

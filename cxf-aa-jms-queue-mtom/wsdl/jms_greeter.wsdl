@@ -167,7 +167,7 @@
 					value="tcp://localhost:61616" />
 
 			</jms:address>
-			<jms:client messageType="byte"/>
+			<jms:client messageType="text"/>
 		</wsdl:port>
 	</wsdl:service>
 </wsdl:definitions>

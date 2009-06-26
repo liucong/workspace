@@ -26,7 +26,8 @@
     xmlns:tns="http://cxf.apache.org/jms_greeter"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
     xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
-    xmlns:x1="http://cxf.apache.org/jms_greeter/types">
+    xmlns:x1="http://cxf.apache.org/jms_greeter/types"
+    xmlns:soapjms="http://www.w3.org/2008/07/soap/bindings/JMS/">
     <wsdl:types>
         <schema targetNamespace="http://cxf.apache.org/jms_greeter/types" 
             xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
@@ -100,9 +101,11 @@
     
     <wsdl:binding name="JMSGreeterPortBinding" type="tns:JMSGreeterPortType">
         <soap:binding style="document" transport="http://www.w3.org/2008/07/soap/bindings/JMS/"/>
-       
+        
+        <soapjms:deliveryMode><soapjms:deliveryMode>PERSISTENT</soapjms:deliveryMode></soapjms:deliveryMode>
+        
         <wsdl:operation name="greetMe">
-            <soap:operation soapAction="" style="document"/>
+            <soap:operation soapAction="test" style="document"/>
             <wsdl:input name="greetMeRequest">
                 <soap:body use="literal"/>
             </wsdl:input>
@@ -112,7 +115,7 @@
         </wsdl:operation>
         
         <wsdl:operation name="sayHi">
-            <soap:operation soapAction="" style="document"/>
+            <soap:operation soapAction="test" style="document"/>
             <wsdl:input name="sayHiRequest">
                 <soap:body use="literal"/>
             </wsdl:input>
@@ -122,7 +125,7 @@
         </wsdl:operation>
         
         <wsdl:operation name="greetMeOneWay">
-            <soap:operation soapaction="" style="document"/>
+            <soap:operation soapaction="test" style="document"/>
             <wsdl:input name="greetMeOneWayRequest">
                 <soap:body use="literal"/>
             </wsdl:input>
@@ -131,7 +134,7 @@
     
     <wsdl:service name="JMSGreeterService">
            <wsdl:port binding="tns:JMSGreeterPortBinding" name="GreeterPort">
-               <soap:address location="jms:jndi:dynamicQueues/test.cxf.jmstransport.queue?jndiInitialContextFactory=org.apache.activemq.jndi.ActiveMQInitialContextFactory&amp;jndiConnectionFactoryName=ConnectionFactory&amp;jndiURL=tcp://localhost:61616"/>
+               <soap:address location="jms:jndi:dynamicQueues/test.cxf.jmstransport.queue?jndiInitialContextFactory=org.apache.activemq.jndi.ActiveMQInitialContextFactory&amp;jndiConnectionFactoryName=ConnectionFactory&amp;jndiURL=tcp://localhost:61616&amp;targetService=greeterService"/>
            </wsdl:port>
     </wsdl:service>
 </wsdl:definitions>

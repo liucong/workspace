@@ -48,7 +48,7 @@
 	<classpathentry kind="var" path="M2_REPO/org/codehaus/woodstox/wstx-asl/3.2.8/wstx-asl-3.2.8.jar"/>
 	<classpathentry kind="var" path="M2_REPO/xml-resolver/xml-resolver/1.2/xml-resolver-1.2.jar" sourcepath="M2_REPO/xml-resolver/xml-resolver/1.2/xml-resolver-1.2-sources.jar"/>
 	<classpathentry kind="var" path="M2_REPO/org/apache/ws/commons/schema/XmlSchema/1.4.5/XmlSchema-1.4.5.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.5.0_08"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cxf-api"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cxf-codegen-plugin"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cxf-common-schemas"/>
@@ -98,6 +98,6 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/cxf-xerces-xsd-validation"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cxf-xjc-dv"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cxf-xjc-ts"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/cxf-rt-transports-jms-spec"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/cxf-rt-transports-jms"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

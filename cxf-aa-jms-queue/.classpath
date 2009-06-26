@@ -102,6 +102,6 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/cxf-xjc-dv-test"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cxf-xjc-ts"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cxf-xjc-ts-test"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/cxf-rt-transports-jms-spec"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/cxf-rt-transports-jms"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
