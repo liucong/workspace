@@ -107,7 +107,7 @@
 		<soapjms:deliveryMode>PERSISTENT</soapjms:deliveryMode>
 		<soapjms:priority>5</soapjms:priority>
 		<soapjms:timeToLive>1000</soapjms:timeToLive>
-		<soapjms:replyToName>replytoname</soapjms:replyToName>
+		<!-- <soapjms:replyToName>replytoname</soapjms:replyToName> -->
 
 		<wsdl:operation name="greetMe">
 			<soap:operation soapAction="test" style="document" />
@@ -151,8 +151,10 @@
 		</soapjms:deliveryMode>
 		<soapjms:priority>6</soapjms:priority>
 		<soapjms:timeToLive>2000</soapjms:timeToLive>
-		<soapjms:replyToName>replytoname2</soapjms:replyToName>
+		<!--<soapjms:replyToName>replytoname2</soapjms:replyToName>-->
 		<wsdl:port binding="tns:JMSGreeterPortBinding" name="GreeterPort">
+			<soap:address
+				location="jms:jndi:dynamicQueues/test.cxf.jmstransport.queue?jndiInitialContextFactory=org.apache.activemq.jndi.ActiveMQInitialContextFactory&amp;jndiConnectionFactoryName=ConnectionFactory&amp;jndiURL=tcp://localhost:61616&amp;targetService=greeterService" />
 			<soapjms:jndiContextParameter name="name3"
 				value="value3" />
 			<soapjms:jndiConnectionFactoryName>ConnectionFactory
@@ -166,9 +168,9 @@
 			</soapjms:deliveryMode>
 			<soapjms:priority>7</soapjms:priority>
 			<soapjms:timeToLive>3000</soapjms:timeToLive>
+			<!-- 
 			<soapjms:replyToName>replytoname3</soapjms:replyToName>
-			<soap:address
-				location="jms:jndi:dynamicQueues/test.cxf.jmstransport.queue?jndiInitialContextFactory=org.apache.activemq.jndi.ActiveMQInitialContextFactory&amp;jndiConnectionFactoryName=ConnectionFactory&amp;jndiURL=tcp://localhost:61616&amp;targetService=greeterService" />
+			-->
 		</wsdl:port>
 	</wsdl:service>
 </wsdl:definitions>
