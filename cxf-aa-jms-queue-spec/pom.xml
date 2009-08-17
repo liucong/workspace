@@ -2,9 +2,9 @@
 <project>
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.apache.cxf.samples</groupId>
-    <artifactId>jms_queue</artifactId>
+    <artifactId>jms_spec_demo</artifactId>
     <version>1.0</version>
-    <name>JMS Transport Queue Demo using Document-Literal Style</name>
+    <name>JMS Transport Specification Demo using Document-Literal Style</name>
     <properties>
         <cxf.version>[2,)</cxf.version>
         <activemq.version>[5,)</activemq.version>

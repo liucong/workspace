@@ -68,56 +68,6 @@ public final class Client {
         greeter.greetMeOneWay(System.getProperty("user.name"));
         System.out.println("No response from server as method is OneWay");
         System.out.println();
-        
-        // Demonstration of JMS Context usage
-
-        InvocationHandler handler = Proxy.getInvocationHandler(greeter);
-
-        BindingProvider  bp = null;
-
-/*        if (handler instanceof BindingProvider) {
-            bp = (BindingProvider)handler;
-            Map<String, Object> requestContext = bp.getRequestContext();
-            JMSMessageType requestHeader = new JMSMessageType();
-            requestHeader.setJMSCorrelationID("JMS_QUEUE_SAMPLE_CORRELATION_ID");
-            requestHeader.setJMSExpiration(3600000L);
-            JMSPropertyType propType = new JMSPropertyType();
-            propType.setName("Test.Prop");
-            propType.setValue("mustReturn");
-            requestHeader.getProperty().add(propType);
-            requestContext.put("org.apache.cxf.jms.client.request.headers", requestHeader);
-            //To override the default receive timeout.
-            requestContext.put("org.apache.cxf.jms.client.timeout", new Long(1000));
-        }
-
-        System.out.println("Invoking sayHi with JMS Context information ...");
-        System.out.println("server responded with: " + greeter.sayHi());
-
-        if (bp != null) {
-            Map<String, Object> responseContext = bp.getResponseContext();
-            JMSMessageType responseHdr = (JMSMessageType)responseContext.get(
-                                       "org.apache.cxf.jms.client.response.headers");
-            if (responseHdr == null) {
-                System.out.println("response Header should not be null");
-                System.out.println();
-                System.exit(1);
-            }
-
-            if ("JMS_QUEUE_SAMPLE_CORRELATION_ID".equals(responseHdr.getJMSCorrelationID())
-                && responseHdr.getProperty() != null) {
-                System.out.println("Received expected contents in response context");
-            } else {
-                System.out.println("Received wrong contents in response context");
-                System.out.println();
-                System.exit(2);
-            }
-        } else {
-            System.out.println("Failed to get the binding provider cannot access context info.");
-            System.exit(3);
-        }
-*/
-
-        System.out.println();
 
         System.exit(0);
     }
